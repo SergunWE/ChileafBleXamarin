@@ -12,7 +12,7 @@
     <tags>Xamarin Binding for Chileaf SDK</tags>
     <dependencies>
 		<group targetFramework=".NETStandard2.0">
-			<dependency id="Xamarin.Forms" version="5.0.0.2012+671-sha.68c17772d-azdo.4465181" />
+			<dependency id="Xamarin.Forms" version="5.0.0.2515+946-sha.94acebbb4-azdo.6439792" />
 		</group>
 		<group targetFramework="MonoAndroid">
 		</group>

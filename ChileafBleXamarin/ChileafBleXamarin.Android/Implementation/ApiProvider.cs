@@ -7,15 +7,22 @@ using Xamarin.Forms;
 using static Android.Bluetooth.BluetoothClass;
 using System.Threading.Tasks;
 using ChileafBleXamarin.DataTypes;
+using Android.Content;
 
 [assembly: Dependency(typeof(ChileafBleXamarin.Droid.Implementation.ApiProvider))]
 namespace ChileafBleXamarin.Droid.Implementation
 {
     internal class ApiProvider : IApiProvider
     {
-        private static readonly WearManager _wearManager;
+        private static WearManager _wearManager;
         private readonly ChileafApiCallback _chileafApiCallback;
         private bool _searchRunning;
+
+        public ApiProvider()
+        {
+            _wearManager = WearManager.GetInstance(ChileafSDK.Context);
+            _chileafApiCallback = new ChileafApiCallback();
+        }
 
         public void Connect(IBTDevice device)
         {

@@ -8,11 +8,11 @@ namespace ChileafBleXamarin.Implementations
 {
     public class ApiCallbackImpl : IApiCallback
     {
-        Action<int> BatteryAction { get; set; }
-        Action<bool> ConnectedAction { get; set; }
-        Action<ChileafHrData> HeartRateDataAction { get; set; }
-        Action<ChileafSportData> SportDataAction { get; set; }
-        Action<int> SensorLocationAction { get; set; }
+        public Action<int> BatteryAction { get; set; }
+        public Action<bool> ConnectedAction { get; set; }
+        public Action<ChileafHrData> HeartRateDataAction { get; set; }
+        public Action<ChileafSportData> SportDataAction { get; set; }
+        public Action<int> SensorLocationAction { get; set; }
 
         public void OnBatteryLevelChanged(int level)
         {

@@ -25,5 +25,7 @@ namespace ChileafBleXamarin.Droid.Chileaf
         public string Name => _device.Name;
 
         public object Native => _device;
+
+        public string Address => _device.Address;
     }
 }
