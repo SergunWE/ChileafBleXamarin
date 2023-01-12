@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>ChileafBleXamarin</id>
+    <version>1.0.$Version$</version>
+    <authors>ITML</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <description>Package description</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Xamarin Binding for Chileaf SDK</tags>
+    <dependencies>
+		<group targetFramework=".NETStandard2.0">
+			<dependency id="Xamarin.Forms" version="5.0.0.2012+671-sha.68c17772d-azdo.4465181" />
+		</group>
+		<group targetFramework="MonoAndroid">
+		</group>
+		<group targetFramework="Xamarin.iOS10">
+		</group>	
+    </dependencies>
+  </metadata>
+  
+  <files>
+      <!-- Main -->
+      <file src="dll\netstandart\ChileafBleXamarin.dll" target="lib\netstandard2.0\ChileafBleXamarin.dll" />  
+      <file src="dll\netstandart\ChileafBleXamarin.pdb" target="lib\netstandard2.0\ChileafBleXamarin.pdb" />  
+      
+      <!-- Droid -->
+      <file src="dll\droid\ChileafBleXamarin.dll"  target="lib\MonoAndroid\ChileafBleXamarin.dll" />    
+      <file src="dll\droid\ChileafBleXamarin.pdb"  target="lib\MonoAndroid\ChileafBleXamarin.pdb" />    
+	  
+	  <file src="dll\droid\ChileafBleXamarin.Android.dll"  target="lib\MonoAndroid\ChileafBleXamarin.Android.dll" />    
+      <file src="dll\droid\ChileafBleXamarin.Android.pdb"  target="lib\MonoAndroid\ChileafBleXamarin.Android.pdb" />  
+	  
+	  <file src="dll\droid\ChileafLibrary.dll"  target="lib\MonoAndroid\ChileafLibrary.dll" />    
+      <file src="dll\droid\ChileafLibrary.pdb"  target="lib\MonoAndroid\ChileafLibrary.pdb" />  
+	  
+	  
+      
+      <!-- iOS -->
+      <!-- <file src="dll\ios\ChileafBleXamarin.dll" target="lib\Xamarin.iOS10\ChileafBleXamarin.dll" />    
+      <file src="dll\ios\ChileafBleXamarin.iOS.dll" target="lib\Xamarin.iOS10\ChileafBleXamarin.iOS.dll" />    
+      <file src="dll\ios\NativeLibrary.dll" target="lib\Xamarin.iOS10\NativeLibrary.dll" />    -->
+    </files> 
+
+</package>

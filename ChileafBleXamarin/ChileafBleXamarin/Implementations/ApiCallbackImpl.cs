@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ChileafBleXamarin.Implementations
 {
-    internal class ApiCallbackImpl : IApiCallback
+    public class ApiCallbackImpl : IApiCallback
     {
         Action<int> BatteryAction { get; set; }
         Action<bool> ConnectedAction { get; set; }
